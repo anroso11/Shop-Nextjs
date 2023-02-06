@@ -1,0 +1,24 @@
+@use 'vars';
+
+.orders {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+	background-color: var(--text-input-field);
+	margin-bottom: 24px;
+	border-radius: 8px;
+	padding: 0 24px;
+}
+.orders p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.orders p span:nth-child(1) {
+	font-size: var(--md);
+	font-weight: bold;
+}
+.orders p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}

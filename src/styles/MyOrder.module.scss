@@ -1,0 +1,89 @@
+@import 'vars';
+
+.MyOrder {
+	width: 360px;
+	padding: 24px;
+	box-sizing: border-box;
+	position: fixed;
+	right: -360px;
+	background-color: #ffffff;
+	top: 60px;
+	bottom: 0;
+	border-radius: 6px;
+	border: 1px solid $--very-light-pink;
+	transition: 1s ease;
+	animation: swipeLeft 1s ease forwards;
+	max-height: 55vh;
+	z-index: 1;
+
+
+}
+.title-container {
+	display: flex;
+	text-decoration: none;
+	color: black;
+}
+.title-container img {
+	transform: rotate(180deg);
+	margin-right: 14px;
+}
+.title {
+	font-size: $--lg;
+	font-weight: bold;
+	cursor: pointer;
+}
+.title:hover{
+	color: $--hospital-green;
+}
+.title-flecha {
+	cursor: pointer;
+}
+
+.my-order-content {
+	overflow-y: auto;
+	max-height: 45vh;
+}
+
+.order-shop {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+	background-color: $--text-input-field;
+	margin-bottom: 24px;
+	border-radius: 8px;
+	padding: 0 24px;
+}
+.order-shop p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.order-shop p span:nth-child(1) {
+	font-size: $--md;
+	font-weight: bold;
+}
+.order-shop p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}
+
+.primary-button {
+	background-color: $--hospital-green;
+	border-radius: 8px;
+	border: none;
+	color: $--white;
+	width: 100%;
+	cursor: pointer;
+	font-size: $--md;
+	font-weight: bold;
+	height: 50px;
+}
+@media (max-width: 640px) {
+	.MyOrder {
+		width: 100%;
+	}
+}
+
+@keyframes swipeLeft {
+	100% {transform: translateX(-360px);}
+}
