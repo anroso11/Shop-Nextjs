@@ -20,7 +20,4 @@ module.export = {
         "@next/next/no-page-custom-font": "off"
       
     },
-    
-
-    
 }
