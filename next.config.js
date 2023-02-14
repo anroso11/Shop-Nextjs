@@ -22,6 +22,7 @@ module.exports = withPWA({
   eslint: {
     ignoreDuringBuilds: true,
   },
+  output: "standalone"
 });
 
 
