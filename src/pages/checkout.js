@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import OrderItem from '@components/OrderItem';
 import styles from '@styles/Checkout.module.scss';
 import AppContext from '@context/AppContext';
 import flechita from '@images/flechita.svg';
-import Link  from 'next/link'; 
-
+import Link from 'next/link';
 
 const Checkout = ({ setToggle }) => {
   const { state } = useContext(AppContext);
@@ -46,7 +45,6 @@ const Checkout = ({ setToggle }) => {
       </div>
     </>
   );
-} 
+};
 
-
-export default Checkout
+export default Checkout;

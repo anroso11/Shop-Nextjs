@@ -8,16 +8,17 @@ module.exports = {
     },
     extends: [
        'eslint:recommended',
-       'next/core-web-vitals',
+       'plugin:jsx-a11y/recommended',
        'plugin:prettier/recommended',
        'next',
-       'plugin:@next/next/recommended',
-
+       'next/core-web-vitals',
     ],
     rules: {
         'semi': ['error' , 'always'],
-        "react/no-unescaped-entities": "off",
-        "@next/next/no-page-custom-font": "off"
-      
+        'prettier/prettier': 0,
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
+ 
 }

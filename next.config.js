@@ -19,9 +19,7 @@ module.exports = withPWA({
     domains: ['api.lorem.space', 'placeimg.com', 'wixmp.com', 'romapy'],
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+ 
   output: "standalone"
 });
 
